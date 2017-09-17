@@ -1,0 +1,158 @@
+---
+layout: post
+title:  "Understanding Git Command"
+date:   2017-04-10 19:46:47 -0300
+published: false
+categories: Git, Git Commands
+tags: git, git commands, git explained visually, git for beginners, git version control system
+---
+<span style="font-size: 16px;">Apart from knowing programming languages and IDE's, a developer should also have knowledge of VCS to manage his code effectively.
+In this article, we will be specifically targeting <strong>Git </strong>on using it and understand various git commands visually.</span>
+
+<span style="font-size: 16px;">Git is Distributed Version Control System(VCS). Now let's try to break down the term "Distributed Version Control System".
+<strong>Version Control System or VCS</strong> is the system which stores history(versions) of files over time and
+<strong>Distributed</strong> means that every local git repository of your project can act as the remote repository for others to do pull or push.</span>
+
+<span style="font-size: 16px;">Let us understand some git commands which are used to move the files from working area to staging area until committing and pushing the files to the remote repo and at the end of the article there is flow diagram to understand and remember git commands visually.</span>
+<p style="text-align: left;"><span style="font-size: 16px;">I have categorized git commands into four sections based on functionality they provide:-</span></p>
+
+<ol>
+ 	<li style="text-align: left;"><span style="font-size: 16px;">Initializing repository.</span></li>
+ 	<li style="text-align: left;"><span style="font-size: 16px;">Getting repository info.</span></li>
+ 	<li style="text-align: left;"><span style="font-size: 16px;">Git operations.</span></li>
+ 	<li style="text-align: left;"><span style="font-size: 16px;">Getting operations Info.</span>[spacer height="10px"]</li>
+</ol>
+<h3><span style="font-family: 'arial black', sans-serif; font-size: 8px;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 23px;">Initializing Git repository</strong></span></h3>
+<div id="git-init"><strong><span style="font-size: 14pt;">git init</span></strong></div>
+[spacer height="4px"]<span style="font-size: 16px;">initializes current directory as git repo(local) which means that every change in the directory will be versioned by git.</span>
+<span style="font-size: 16px;"><strong>When to use</strong> - If you do not have remote repo than use <strong><a href="#git-init">git init</a> </strong>otherwise use <strong><a href="#git-clone">git clone</a></strong>.</span>
+<strong>usage</strong> - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git init </span>
+<span style="font-size: 16px;">In the screenshot below, directory <strong>Geek As Service </strong>is initialized as the git repo.</span>
+
+[caption id="attachment_122" align="aligncenter" width="559"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-init.png"><img class="wp-image-122" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-init-300x74.png" alt="result of git init in image" width="559" height="138" /></a> <strong>git init</strong> output[/caption]
+
+[spacer height="20px"]
+<div id="git-clone"><strong><span style="font-size: 14pt;">git clone</span></strong></div>
+<strong><span style="font-size: 14pt;">[spacer height="4px"]</span></strong><span style="font-size: 16px;">Clones/Downloads remote repository hence local intialized.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> - <span style="color: #ffffff; background-color: #000000; font-family: 'courier new', courier, monospace;"> git clone https://www.github.com/geek-as-service/git-commands </span></span><em>
+</em>[spacer height="10px"]
+<h3><span style="font-family: 'arial black', sans-serif; font-size: 8px;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 23px;">Getting repository info</strong></span></h3>
+<span style="font-size: 14pt;"><strong>git remote -v[spacer height="4px"]</strong></span><span style="font-size: 16px;">Shows list of remote URLs for your local repository.</span>
+<span style="font-size: 16px;">Now, If you had used <strong><a href="#git-clone">git clone</a></strong> for creating </span>local<span style="font-size: 16px;"> repo, then remote URL will be present in the output.</span>
+<span style="font-size: 16px;">but, if you had used <a href="#git-init"><strong>git init </strong></a>then no remote URL will be listed. </span><span style="font-size: 16px;"><a href="#git-remote-add"><strong>git remote add</strong></a> command can be used to add remote URL to local repo.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git remote -v </span></span>
+<span style="font-size: 16px;">In the screenshot below, the output shows remote URLs with name "<em>origin</em>" for pushing and pulling the changes.</span>
+
+[caption id="attachment_123" align="aligncenter" width="548"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-remote-v.png"><img class="wp-image-123" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-remote-v-300x80.png" alt="result of git remote in image" width="548" height="146" /></a> <strong>git remote -v</strong> shows remote URL for local repo[/caption]
+
+[spacer height="20px"]
+<div id="git-status"><span style="font-size: 14pt;"><strong>git status[spacer height="4px"]</strong></span></div>
+<span style="font-size: 16px;">git status shows the status of local repo. It lists newly created(untracked files), files with changes(modified files) and changes ready to committed(files in the staging area). It also lists unmerged files if there was conflict.[spacer height="7px"]Some terms which will be used more frequently[spacer height="10px"]<strong>Untracked Files</strong> - Files which are not tracked by git.</span>
+<span style="font-size: 16px;"> <strong>Tracked Files</strong> - Files which are being tracked by git for changes. If the change is found in the file then it will show the file as modified file but if there is no change in the file since the last commit then the file will not be listed in the output of <strong><a href="#git-status">git status</a></strong>.</span>
+<span style="font-size: 16px;"> <strong>Staged File</strong> - Tracked files which have some changes and these changes have been approved using <strong><a href="#git-add">git add</a></strong> and can be committed using <strong><a href="#git-commit">git commit</a></strong>.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> -  <span style="background-color: #000000; color: #ffffff;"><span style="font-family: 'courier new', courier, monospace;"> git status </span>
+</span></span><span style="font-size: 16px;"><span style="margin-left: 58px; color: #ffffff; background-color: #000000;"><span style="font-family: 'courier new', courier, monospace;"> git status --short --branch </span></span></span>
+<span style="font-size: 16px;">In the screenshot below, <strong><a href="#git-status">git status</a></strong> command was executed with two flags "<em>short</em>" and "<em>branch</em>" which shows the status in a single line for each file. As you can see, "<em>first file</em>" is in <span style="color: #00ff00; background-color: #000000;">staging area</span> while "<em>second file</em>" is <span style="color: #ff0000; background-color: #000000;">modified file</span> and "<em>third file</em>" is </span><span style="background-color: #000000; color: #ff0000; font-size: 16px;">untracked</span><span style="font-size: 16px;"><span style="background-color: #000000; color: #ff0000;"> file</span>.</span>
+
+[caption id="attachment_126" align="aligncenter" width="578"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git_status_with_flags.png"><img class="wp-image-126" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git_status_with_flags-300x100.png" alt="result of git status --short --branch in image" width="578" height="193" /></a> <strong> git status --short --branch </strong>shows state of each file[/caption]
+
+[spacer height="30px"]
+
+<span style="font-size: 16px;">Moving on to next set of commands which allows us to do the following operations</span>
+<ol style="list-style-type: lower-greek;">
+ 	<li><span style="font-size: 16px;">add files.</span></li>
+ 	<li><span style="font-size: 16px;">commit changes.</span></li>
+ 	<li><span style="font-size: 16px;">pull new changes from a remote repo to the local repo.</span></li>
+ 	<li><span style="font-size: 16px;">push local repo to a remote repository.</span></li>
+ 	<li><span style="font-size: 16px;">add remote URL to local repo.</span></li>
+</ol>
+[spacer height="10px"]
+<h3><span style="font-family: 'arial black', sans-serif; font-size: 8px;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 23px;">Git Operations</strong></span></h3>
+<div id="git-add"><span style="font-size: 14pt;"><strong>git add[spacer height="4px"]</strong></span></div>
+<span style="font-size: 16px;">git add will move the modified file to the staging/indexing area. git add is also used to start tracking untracked files.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git add PATH_OF_FILE </span></span>
+<span style="font-size: 16px;">In the screenshot below, git add moves "<em>first file</em>" to the staging area.</span>
+
+[caption id="attachment_121" align="aligncenter" width="594"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-add.png"><img class="wp-image-121" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-add-300x207.png" alt="result of git add in image" width="594" height="409" /></a> <strong>git add </strong>moves<strong> </strong>untracked, tracked into staging/index area.[/caption]
+
+[spacer height="20px"]
+<div id="git-commit"><span style="font-size: 14pt;"><strong>git commit[spacer height="4px"]</strong></span></div>
+<span style="font-size: 16px;">C</span><span style="font-size: 16px;">ommit's the indexed/staged changes to local repo.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> - <span style="color: #ffffff; background-color: #000000;"> <span style="font-family: 'courier new', courier, monospace;">git commit </span></span></span>
+<span style="font-size: 16px;"><span style="margin-left: 54px; background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git commit -m "SINGLE LINE MESSAGE" </span></span>
+<span style="font-size: 16px;">In the screenshot below, "<em>first file</em>" was in staging area but after running <strong><a href="#git-commit">git commit</a></strong> it has been committed.</span>
+
+[caption id="attachment_131" align="aligncenter" width="617"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-commit.png"><img class="wp-image-131" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-commit-300x202.png" alt="result of git commit in image" width="617" height="415" /></a> <strong>git commit </strong>commits all those files which were staged/indexed.[/caption]
+
+[spacer height="20px"]
+
+<strong><span style="font-size: 14pt;">git pull[spacer height="4px"]</span></strong><span style="font-size: 16px;">After committing changes, you need to synchronize your local repo with remote repo. To do that you pull all the new changes made by others in remote repo using above command.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> -<span style="font-family: 'courier new', courier, monospace;"> <span style="background-color: #000000; color: #ffffff;"> git pull </span></span></span>
+<span style="font-size: 16px;"><span style="margin-left: 60px; background-color: #000000; color: #ffffff;"><span style="font-family: 'courier new', courier, monospace;"> git pull origin master</span> </span></span>
+git<span style="font-size: 16px;"> pull origin master command pulls changes from remote URL <em>"origin"</em> and branch <em>"master".</em>[spacer height="15px"]</span>
+
+<span style="font-size: 14pt;"><strong>git push[spacer height="4px"]</strong><span style="font-size: 16px;">P</span></span><span style="font-size: 16px;">ushes your local repo to remote repo, and hence your changes become available for others.</span>
+<span style="font-size: 16px;"> <strong> usage</strong> -<span style="font-family: 'courier new', courier, monospace;"> <span style="background-color: #000000; color: #ffffff;"> git push </span></span></span>
+<span style="font-size: 16px;"><span style="margin-left: 60px; color: #ffffff; background-color: #000000;"><span style="font-family: 'courier new', courier, monospace;"> git push origin master</span> <span style="background-color: #ffffff;"> </span></span><span style="color: #ffffff;"><em><span style="color: #000000;">[spacer height="15px"]</span></em></span></span>
+<div id="git-remote-add"></div>
+<strong><span style="font-size: 14pt;">git remote add NAME_OF_REMOTE REMOTE_URL[spacer height="4px"]</span></strong><span style="font-size: 16px;">This command is used to add remote URL to local repo.</span>
+<span style="font-size: 16px;"> <strong>usage</strong> - <span style="background-color: #000000; color: #ffffff;"><span style="font-family: 'courier new', courier, monospace;"> git remote add origin URL </span>
+</span><span style="color: #ffffff;"><span style="color: #ffffff;"><span style="color: #000000;">In the screenshot below, we are adding remote URL <em>"https://github.com/geek-as-service/git-commands"</em><strong><em> </em></strong>by name<em> "origin".</em></span></span></span></span><span style="font-family: terminal, monaco, monospace;"><span style="background-color: #000000; color: #ffffff;">
+</span></span>
+
+[caption id="attachment_132" align="aligncenter" width="594"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-remote-add.png"><img class="wp-image-132 " src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-remote-add-300x119.png" alt="result of git remote add in image" width="594" height="235" /></a> <strong>git remote add </strong>output[/caption]
+
+[spacer height="30px"]
+
+<span style="font-size: 16px;">Next set of commands focus on knowing more about what had been done and what is going in local repository, i.e.</span>
+<ol style="list-style-type: lower-greek;">
+ 	<li><span style="font-size: 16px;">list of commits.</span></li>
+ 	<li><span style="font-size: 16px;">changes/files which have been committed but not pushed.</span></li>
+ 	<li><span style="font-size: 16px;">changes in the particular old commit.</span><span style="font-size: 12pt;">
+</span></li>
+</ol>
+[spacer height="10px"]
+<h3><span style="font-family: 'arial black', sans-serif; font-size: 8px;"><strong style="font-family: verdana, geneva, sans-serif; font-size: 23px;">Getting Info regarding Git Operations</strong></span></h3>
+<span style="font-size: 14pt;"><strong>git log[spacer height="4px"]</strong></span><span style="font-size: 16px;">Shows the history of commits.</span>
+<span style="font-size: 16px;">Each commit has commit hash, author, date and commit message.<em> </em>Commits are shown in chronological order(latest commit on top).</span>
+<span style="font-size: 16px;">usage -  <span style="background-color: #000000; color: #ffffff;"><span style="font-family: 'courier new', courier, monospace;"> git log </span>
+</span><span style="color: #ffffff;"><span style="color: #000000;">In the screenshot below, git log shows two commits. Commit hash is jibberish written as <em>"commit e7f2b69c6daf9d3417f.......". </em>This hash is useful when using <strong><a href="#git-show">git show</a></strong>.</span></span></span>
+
+[caption id="attachment_141" align="aligncenter" width="511"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-log.png"><img class="wp-image-141 " src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-log-300x175.png" alt="result of git commit in image" width="511" height="298" /></a> 2 commits are shown in <strong>git commit</strong> output[/caption]
+
+[spacer height="20px"]
+<div id="git-show"><span style="font-size: 14pt;"><strong>git show COMMIT_HASH[spacer height="4px"]</strong></span></div>
+<span style="font-size: 16px;">S</span><span style="font-size: 16px;">hows all the changes done in particular commit. We can either use first five characters of commit hash or use complete commit hash.</span>
+<span style="font-size: 16px;">usage - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git show e55ce </span></span>
+
+[caption id="attachment_134" align="aligncenter" width="539"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-show-HASH.png"><img class="wp-image-134" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-show-HASH-300x167.png" alt="result of git show in image" width="539" height="300" /></a> <strong>git show</strong> Shows changes in all files in particular commit.[/caption]
+
+[spacer height="20px"]
+
+<span style="font-size: 14pt;"><strong>git show  REMOTE_NAME/BRANCH_NAME..BRACH_NAME[spacer height="4px"]</strong></span><span style="font-size: 16px;">Shows all the changes which you have committed but have not pushed.</span>
+<span style="font-size: 16px;">usage - <span style="background-color: #000000; color: #ffffff;"><span style="font-family: 'courier new', courier, monospace;"> git show origin/master..master </span>
+<span style="background-color: #ffffff; color: #000000;">In Screenshot below, the complete command is explained. <strong><em>".."</em> </strong>is difference between <em>"<strong>origin/master"</strong></em> and <em><strong>"master"</strong></em></span></span></span>
+
+[caption id="attachment_156" align="aligncenter" width="429"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-show-origin-master..master.svg"><img class="wp-image-156" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-show-origin-master..master.svg" alt="git show origin explained." width="429" height="152" /></a> <strong>git show origin</strong> explained.[/caption]
+
+[spacer height="20px"]
+
+<span style="font-size: 14pt;"><strong>git diff[spacer height="4px"]</strong>S</span><span style="font-size: 16px;">hows all the changes in tracking area which you have not staged or indexed. git status just shows the list of files but git diff shows the exact changes in each file. git diff only shows files which have been modified and have not been staged. It also does not shows untracked files.
+usage - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git diff
+</span>In the screenshot below, git diff shows all the changes which are in tracking with detail that whether these changes have been added or removed.</span>
+
+[caption id="attachment_135" align="aligncenter" width="574"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-diff.png"><img class="wp-image-135 " src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-diff-300x188.png" alt="result of git diff in image" width="574" height="360" /></a> <strong>git diff</strong> shows the changes in working area.[/caption]
+
+[spacer height="20px"]
+
+<span style="font-size: 14pt;"><strong>git diff --cached[spacer height="4px"]</strong></span><span style="font-size: 16px;">Shows all the changes in staging area i.e </span>changes<span style="font-size: 16px;"> which are ready to be committed. It shows the modified changes which have been staged.
+usage - <span style="background-color: #000000; color: #ffffff; font-family: 'courier new', courier, monospace;"> git diff --cached </span>
+</span>
+
+[caption id="attachment_136" align="aligncenter" width="595"]<a href="https://www.geekasservice.com/wp-content/uploads/2017/03/git-diff-cached.png"><img class="wp-image-136" src="https://www.geekasservice.com/wp-content/uploads/2017/03/git-diff-cached-300x193.png" alt="result of git diff --cached in image" width="595" height="383" /></a> <strong>git diff --cached</strong> shows changes which have been staged.[/caption]
+
+[spacer height="20px"]And <span style="font-size: 16px;">Now is the <strong>Git flow chart </strong>to remember git commands.<a href="https://www.geekasservice.com/wp-content/uploads/2017/04/Understanding-Git-Flow-blog.svg"><img class="aligncenter size-full wp-image-328" src="https://www.geekasservice.com/wp-content/uploads/2017/04/Understanding-Git-Flow-blog.svg" alt="" /></a></span>
+
+&nbsp;
+
+[spacer height="10px"]<span style="font-size: 16px;">The above image list all commands to move from untracked files to tracking area and staging area and then back to tracking area, untracked area and last committed state of </span>file<span style="font-size: 16px;">.</span>

@@ -23,7 +23,7 @@ Now, comes the part of **deploying your CMS framework**. There are number of fre
 There couple of reasons for choosing AWS services:  
 **a.**  I wanted to explore AWS services.  
 **b.**  AWS provides services for free for 1 year.  
-**c.**  Since Cloud is Hot and trending in the market for deploying enterprise applications.
+**c.**  Since Cloud is Hot and trending in the market for deploying enterprise applications.  
 **d.**  Complete control over infrastructure.  
 **e.**  Application Can be Scaled and expanded according to my needs.
 

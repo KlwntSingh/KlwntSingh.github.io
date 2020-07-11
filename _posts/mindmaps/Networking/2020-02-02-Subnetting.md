@@ -1,3 +1,8 @@
+---
+title: Subnetting
+layout: post
+---
+      
 
 # Subnetting  
 

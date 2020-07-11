@@ -1,3 +1,8 @@
+---
+title: shell scripting
+layout: post
+---
+      
 
 # Shell Scripting  
 

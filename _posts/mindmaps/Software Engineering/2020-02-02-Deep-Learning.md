@@ -1,3 +1,8 @@
+---
+title: Deep Learning
+layout: post
+---
+      
 
 # Deep Learning  
 

@@ -1,3 +1,8 @@
+---
+title: Robert C Martin Talks
+layout: post
+---
+      
 
 # Clean Code  
 

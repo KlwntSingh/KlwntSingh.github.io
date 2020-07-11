@@ -1,3 +1,8 @@
+---
+title: Network Management and Design
+layout: post
+---
+      
 
 # Management  
 

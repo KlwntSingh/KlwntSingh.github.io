@@ -1,3 +1,8 @@
+---
+title: Security Theory
+layout: post
+---
+      
 
 # Security Theory  
 

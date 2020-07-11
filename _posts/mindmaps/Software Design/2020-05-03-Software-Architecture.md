@@ -1,3 +1,8 @@
+---
+title: Software Architecture
+layout: post
+---
+      
 
 # Software Architecture  
 

@@ -1,3 +1,8 @@
+---
+title: Emerging technologies
+layout: post
+---
+      
 
 # Emerging technologies  
 

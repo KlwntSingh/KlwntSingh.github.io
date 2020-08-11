@@ -17,6 +17,8 @@ layout: post
 
 ## chapter 3Bad smells in code [anchor](xmind:#5n4jlg7tumocngrch9fdj415c2 "anchor")
 * this chapter deals with different types of bad smell(code) and what refactoring to do to handle that bad smell 
+
+---
 # chapter 1
 
 ## tips 
@@ -49,6 +51,8 @@ layout: post
 ## Notes 
 * 1 [anchor](xmind:#5nr8okp5rt0f6tfslj96dt8buc "anchor")
 * 2 [anchor](xmind:#29itskoe98krftsj71v74e1htp "anchor")
+
+---
 # chapter 2
 
 ## definations 
@@ -188,6 +192,8 @@ layout: post
 * 1 [anchor](xmind:#0kgmb9jo7lp27t0sq9bbpokvkp "anchor")
 * 2 [anchor](xmind:#6uar1pb7f6l7e8r499gu8tuhbe "anchor")
 * 3 [anchor](xmind:#2j4coa6861c0d4j9ba40vslpjb "anchor")
+
+---
 # chapter 3
 
 ## personal thoughts 
@@ -342,6 +348,8 @@ layout: post
 	* 'Hide Delegate' to let another class act as go-between 
 
 ## Divergent change is one class that suffers many kinds of changes, and shotgun surgery is onechange that alters many classes. Either way you want to arrange things so that, ideally, there is aone-to-one link between common changes and classes. 
+
+---
 # Sheet 5
 
 ## extract method 
@@ -367,6 +375,8 @@ layout: post
 
 ## extract subclass 
 * ch3> large class 
+
+---
 # Sheet 6
 
 ## component 
@@ -376,3 +386,5 @@ layout: post
 
 ## canarying 
 * while deployment, testing the feature on small subset of typical workload 
+
+---

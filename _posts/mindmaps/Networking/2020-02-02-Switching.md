@@ -96,6 +96,8 @@ layout: post
 	* trunking mode negociation protocol 
 * #### vtp 
 	* vlan creation/sharing protocol 
+
+---
 # STP
 
 ## Why? 
@@ -226,6 +228,8 @@ layout: post
 * rvstp+ 
 * #### problems with per vlan stp's 
 	* they do not scale if no. of vlan's increases 
+
+---
 # VLAN
 
 ## trunking mode 
@@ -314,3 +318,5 @@ layout: post
 	* extended 
 * #### 4095 
 	* reserved 
+
+---

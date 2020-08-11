@@ -57,6 +57,8 @@ by google
 * demand forecasting and capacity planning 
 * provisioning 
 * efficiency and performance 
+
+---
 # chapter 2
 
 ## B4 
@@ -103,6 +105,8 @@ by google
 	* even call to subrouting in local program is made by rpc call, so that if subrouting is refactored to different server, code does not break 
 * stubby - closed source rpc infrastructuregrpc - open-source rpc framwork 
 * protocol buffer is way data is transfered. same as apache thirft 
+
+---
 # undefined
 
 ## terms 
@@ -122,6 +126,8 @@ by google
 * amount of error we can perform after achieving the slo 
 * #### slo | actual monitored metric | 100% 
 	* actual monitored metric changes as changes are introducted 
+
+---
 # Sheet 4
 
 ## different kinds of metrics available 
@@ -131,3 +137,5 @@ by google
 	* interms of batch processings 
 * #### durability 
 	* data will be retained for long period of time, usefull for storage system 
+
+---

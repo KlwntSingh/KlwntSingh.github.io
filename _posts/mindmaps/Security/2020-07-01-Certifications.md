@@ -11,12 +11,16 @@ layout: post
 
 ## ISC 
 * CISSP, SSCP, CCSP, CAP, CSSLP or HCISPP 
+
+---
 # Conferences
 
 ## OSDFCon 
 * open source digital forensics conference 
 
 ## Blackhat 
+
+---
 # Training
 
 ## BasisTechnology 
@@ -30,6 +34,8 @@ layout: post
 * Certified network security specialist 
 
 ## https://www.pentesteracademy.com/ [anchor](https://www.pentesteracademy.com/ "anchor")
+
+---
 # Frameworks
 
 ## OSINT 
@@ -40,7 +46,11 @@ layout: post
 
 ## OS forensics 
 * deft linux 
+
+---
 # OS
 
 ## OS-Buscador 
 * fully setup with osint tools 
+
+---

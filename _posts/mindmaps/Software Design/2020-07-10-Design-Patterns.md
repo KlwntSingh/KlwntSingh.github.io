@@ -35,6 +35,8 @@ layout: post
 ## Principles 
 * separating code which changes from code that does not change by encapsulating the code which changes hence not affecting the code which does not change 
 * program to an interface/supertype 
+
+---
 # Paradigms
 
 ## how 
@@ -77,6 +79,8 @@ layout: post
 	* typing checked at compile time 
 * #### dynamic typing 
 	* checked at run time 
+
+---
 # similarity between patterns
 
 ## factory pattern 
@@ -134,6 +138,8 @@ layout: post
 ## making compatible 
 * adding additional layer 
 * giving certain view 
+
+---
 # thoughts
 
 ## ways to add additional functionality in functions 
@@ -148,6 +154,8 @@ layout: post
 
 ## about assert statements 
 * should all assert statments be at bottom of code and as code flow set variables which will be assserted later. But this thing fails when we don't want to continue code flow if one of variable is not as expected 
+
+---
 # Drawings
 
 ## DerivedClass2 extends BaseClass 
@@ -159,3 +167,5 @@ layout: post
 ## Implementation1 implements interface 
 
 ## Implementation2 implements interface 
+
+---

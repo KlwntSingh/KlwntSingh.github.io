@@ -112,6 +112,8 @@ layout: post
 
 ## Facts 
 * word - 2 bytes 
+
+---
 # Malware Analysis
 
 ## windows 
@@ -176,6 +178,8 @@ layout: post
 		* usermode and kernel mode debugging 
 	* IDA pro 
 		* debugger and dissambler 
+
+---
 # Reverse Egnineering
 
 ## Debugger 
@@ -214,6 +218,8 @@ layout: post
 	* use cuckoo 
 * #### actually want to see how it works 
 	* debugger 
+
+---
 # Sysinternal tools
 
 ## process monitor 
@@ -241,4 +247,8 @@ layout: post
 
 ## regmon 
 * monitoring registry 
+
+---
 # osint
+
+---

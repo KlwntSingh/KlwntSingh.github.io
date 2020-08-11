@@ -26,6 +26,8 @@ layout: post
 
 ## state of mind 
 * reading command pattern 
+
+---
 # fs-advanced
 
 ## action 
@@ -47,6 +49,8 @@ layout: post
 
 ## state of mind 
 * reading command pattern 
+
+---
 # factory method
 
 ## Pizza 
@@ -74,6 +78,8 @@ layout: post
 		* if conditions for veg, cheese pizza 
 	* CaliforniaStylePizzaStore 
 		* if condition for veg, cheese pizza 
+
+---
 # Sheet 4
 
 ## Vehicle 
@@ -88,3 +94,5 @@ layout: post
 * payForParkingSpace 
 
 ## Payment 
+
+---

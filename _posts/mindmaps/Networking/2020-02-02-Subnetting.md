@@ -84,3 +84,5 @@ layout: post
 
 ## Default Route 
 * 0 means variable, 1 means it is fixedhence 0.0.0.0/0 means 0.0.0.0 is starting address and 0 as subnet mask means everything is variable 
+
+---

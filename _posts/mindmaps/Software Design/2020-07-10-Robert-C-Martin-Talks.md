@@ -25,3 +25,5 @@ layout: post
 ## actor model for limited stacks machines 
 
 ## number of args are more than 3, better to have object with properties to pass 
+
+---

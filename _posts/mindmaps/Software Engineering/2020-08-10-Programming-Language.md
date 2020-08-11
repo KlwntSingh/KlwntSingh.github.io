@@ -11,6 +11,8 @@ layout: post
 * #### release cycle changed to 6 months 
 	* Java 14 on March 14 
 * SE - standard edition 
+
+---
 # Javascript
 
 ## Versions 
@@ -19,6 +21,8 @@ layout: post
 
 ## General 
 * Release cycle 1 Year 
+
+---
 # Python
 
 ## General 
@@ -26,3 +30,5 @@ layout: post
 
 ## Version 
 * 3.8.4, July 2020 
+
+---

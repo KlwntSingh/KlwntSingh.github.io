@@ -323,6 +323,8 @@ layout: post
 * #### tls1.2 
 	* latest 
 	* very less improvement after tls1 
+
+---
 # IPSec
 
 ## phase 1 
@@ -427,6 +429,8 @@ layout: post
 * encapsulating esp header in udp header 
 * esp header in upd port 4500 
 * isakmp in udp port 500 
+
+---
 # VPN
 
 ## VPN protocols 
@@ -471,3 +475,5 @@ layout: post
 		* eg: gre, ipsec 
 * #### peer to peer model 
 	* peership is made been CE and PE 
+
+---

@@ -75,32 +75,12 @@ layout: post
 * we will compose these behaviours in duck class 
 
 ## Requirement - add fly functions to duck 
-* ####  
-	* Added fly functionality in base class 
-		*  
-			*  
-				*  
-					* Overridden fly on rubber duck 
-						*  
-							*  
-								*  
-									* New species of duck addedWooden duck 
-										*  
-											*  
-												*  
-													*  
-														*  
-															*  
-																*  
-																	*  
-																		* Interfaces IntroducedFlyable, Quackable 
-																			*  
-																				*  
-																					*  
-																						*  
-																							*  
-																								*  
-																									*  
+* #### Added fly functionality in base class 
+	* Overridden fly on rubber duck 
+		* New species of duck addedWooden duck 
+			* Interfaces IntroducedFlyable, Quackable 
+
+---
 # Chapter1
 
 ## Design Principals:rules which are followed in design pattern 
@@ -168,7 +148,6 @@ layout: post
 
 ## patterns 
 * #### Strategy 
-	*  
 * #### Observer Pattern 
 	* defines loosely coupled design 
 * #### Decorator pattern 
@@ -226,11 +205,15 @@ layout: post
 * #### code structuralwhich code flow 
 	* observer pattern 
 	* command pattern 
+
+---
 # Strategy
 
 ## eg: - duck example, different fly, quack behaviours 
 
 ## family of interchangeable algorithm, and pattern let algorithm vary, independently from client 
+
+---
 # Observer
 
 ## difference between observer pattern and strategy pattern 
@@ -258,6 +241,8 @@ layout: post
 
 ## eg: 
 * weather station with different display elements 
+
+---
 # Decorator
 
 ## problem is class explosion 
@@ -304,6 +289,8 @@ layout: post
 	* my solution 
 * #### Decorator pattern: having condiment object wrapping beverage object, beverage object can be nested in as many objects we like 
 	* problems:1. condition on concrete beverage cannot be applied if it is wrapped with decorators2. chance of coding errors increases because number of different combinations to create any type of beverage increases, of course this is solved by factory and builder pattern 
+
+---
 # Factory
 
 ## letting subclass decide what object to create 
@@ -330,6 +317,8 @@ layout: post
 * #### Subclasses deciding type of pizza to create 
 	* same flexibility and pizzastore can't put in their custom method 
 	* moved from object handle instantiation to subclass 
+
+---
 # Sheet 6
 
 ## why not global variable 
@@ -355,6 +344,8 @@ layout: post
 ## we cannot create subclass of private constructor in base class 
 
 ## eg: chocolate boiler 
+
+---
 # Sheet 7
 
 ## it adds level of indirection 
@@ -368,6 +359,8 @@ layout: post
 	* single execute operation is created 
 
 ## multiple commands can be wrapped inside command object 
+
+---
 # Sheet 8
 
 ## components 
@@ -411,9 +404,13 @@ layout: post
 	* subsystems 
 	* facade 
 * just add different classes as components to current class 
+
+---
 # Sheet 9
 
 ## steps of algorithm is represent by method in base class and some steps of algorithm are implemented by subclasses 
+
+---
 # Sheet 10
 
 ## Single Responsibility Principle 
@@ -431,6 +428,8 @@ layout: post
 
 ## Dependency Inversion Principle 
 * higher level modules should not be dependent on lower level modules 
+
+---
 # Quotes
 
 ## Instead of code reuse, with patterns we get experience reuse 
@@ -442,6 +441,8 @@ layout: post
 ## reuse above maintainability and extensibility 
 
 ## Principles are rules while patterns are their concrete examples. 
+
+---
 # Why Software Change?
 
 ## change in requirement 
@@ -455,6 +456,8 @@ layout: post
 ## changing third party dependencies 
 
 ## change in dependencies 
+
+---
 # Questions
 
 ## what design principles in decorating pattern example of having classes for all combinations of condiments with beverage are violating? 
@@ -463,3 +466,5 @@ layout: post
 * open for extension, closed for modification 
 
 ## how to decide wether to pass instance variable or create instance inside class? 
+
+---

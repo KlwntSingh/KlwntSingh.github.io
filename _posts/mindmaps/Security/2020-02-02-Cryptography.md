@@ -21,3 +21,5 @@ layout: post
 	* we should follow the same philosphy of making public algorithms and secret key 
 * #### cryptographic checksum 
 	* algorithm is public but key is secret to create checksum(MAC - message authentication code or MIC - message integrity code) 
+
+---

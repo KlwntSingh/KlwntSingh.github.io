@@ -302,6 +302,8 @@ layout: post
 * requirement gathering 
 * Understanding current state of network 
 * designing, implementing and operating 
+
+---
 # Design
 
 ## Backbone Networks 
@@ -594,3 +596,5 @@ layout: post
 			* they provide information about existing network, they provide lot of detail on exisiting equipment being used 
 		* section 3 
 			* this lists the requirements of what they want their network to be 
+
+---

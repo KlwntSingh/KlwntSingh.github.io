@@ -26,3 +26,5 @@ layout: post
 * #### 2pc 
 	* two phase commit 
 		* transaction cordinator decide whether to commit or rollback 
+
+---

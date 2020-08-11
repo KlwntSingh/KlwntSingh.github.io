@@ -22,3 +22,5 @@ layout: post
 * other nodes are connected to nodes whcih are connected to every things 
 
 ## Hybrid 
+
+---

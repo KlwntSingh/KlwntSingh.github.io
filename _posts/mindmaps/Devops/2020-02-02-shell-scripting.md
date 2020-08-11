@@ -75,3 +75,5 @@ layout: post
 	* it comes in picture when pipe in commands is used.the standard input is not passed line by line but as a whole 
 	* xargs is another utility which enables standard input to taken as command line argument 
 * command line argument means actually passing file to script from which content will be read and processed on 
+
+---

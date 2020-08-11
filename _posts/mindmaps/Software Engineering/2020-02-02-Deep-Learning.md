@@ -12,3 +12,5 @@ layout: post
 	* error averaged over entire training example 
 * #### gradient descent 
 	* finding the parameters(W,b) where cost function is minimum 
+
+---

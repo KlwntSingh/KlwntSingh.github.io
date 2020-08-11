@@ -41,6 +41,8 @@ layout: post
 * #### there are challenges when we have more moving parts(services) 
 	* newer technologies themselves provide ease with deployment 
 * mostly problems are same as of distributed system 
+
+---
 # Chapter 2
 
 ## wrong comparison with other professions 
@@ -91,6 +93,8 @@ layout: post
 
 ## Governance and Leading from the Center 
 * team of leaders from other teams for proper sharing of principles, pratices and tracking technical debt and risk 
+
+---
 # Chapter 3
 
 ## Good Service should have high cohesion and loose coupling 
@@ -141,4 +145,8 @@ layout: post
 * #### eg: 
 	* Front end as one microservice and backend as another microservice 
 		* Here, however, rather than taking a vertical, business-focused slice through the stack, the team picked what was previously an in-process API and made a horizontal slice. 
+
+---
 # Chapter 4
+
+---

@@ -13,3 +13,5 @@ layout: post
 ## cross site origin 
 * headers introduced by server to relax same site origin 
 * browser will not let request to comein, untill response has headers 
+
+---

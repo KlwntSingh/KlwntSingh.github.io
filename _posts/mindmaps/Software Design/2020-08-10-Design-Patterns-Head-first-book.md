@@ -315,6 +315,21 @@ layout: post
 
 ## Abstract Factory pattern 
 * provide interface for creating families of related or dependent objects without specifying the concrete class 
+
+## Pizza Store example 
+* #### orderPizza class with type of pizza as argument 
+	* based on type of pizza passed pizza is prepared 
+	* problems 
+		* code not flexible, adding new type of pizza requires code change 
+* #### orderPizza class with PizzaFactory 
+	* pizza creation code is pulled out to separate class called PizzaFactory 
+	* Now, adding new type of pizza will require change in pizzafactory 
+	* Can have multiple factories based on different style of pizza's from different regions 
+	* problem 
+		* better design flexibility but pizza store started to use their own pizza preparing process 
+* #### Subclasses deciding type of pizza to create 
+	* same flexibility and pizzastore can't put in their custom method 
+	* moved from object handle instantiation to subclass 
 # Sheet 6
 
 ## why not global variable 
